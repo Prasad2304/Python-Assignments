@@ -1,19 +1,21 @@
-#run-length encoding
-#compress a string  by counting consecutive characters 
-
-def run_length_encoding(s):
+def compress_string(s):
     if not s:
-        return ""
-    
-    encoded = []
+        return s
+
+    compressed = []
     count = 1
-    
+
     for i in range(1, len(s)):
         if s[i] == s[i - 1]:
             count += 1
         else:
-            encoded.append(f"{s[i - 1]}{count}")
+            compressed.append(s[i - 1] + str(count))
             count = 1
             
-    encoded.append(f"{s[-1]}{count}")  
-    return ''.join(encoded)
+    compressed.append(s[-1] + str(count))
+    result = "".join(compressed)
+
+    return result if len(result) < len(s) else s
+
+user_input = input("Enter a string: ")
+print("Result:", compress_string(user_input))

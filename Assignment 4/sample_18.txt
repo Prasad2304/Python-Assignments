@@ -1,0 +1,8 @@
+document.txt
+photo.png
+report.pdf
+image.png
+notes.txt
+book.pdf
+data.csv
+picture.jpg

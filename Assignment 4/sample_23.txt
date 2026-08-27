@@ -1,0 +1,4 @@
+Hello, Python is easy to learn.
+Python is a popular programming language.
+I am learning Python file handling.
+Python is useful for many applications.

@@ -1,0 +1,4 @@
+Hello, java is easy to learn.
+java is a popular programming language.
+I am learning java file handling.
+java is useful for many applications.
